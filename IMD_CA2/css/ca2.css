@@ -1,0 +1,21 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000; /* Text colour */
+    background-color: #c0c0c0; 
+  }
+  
+  .topics {
+    padding-top: 4rem;
+    margin: 2rem;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color: yellow;
+    align-items: baseline;
+  }
+  
