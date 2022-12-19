@@ -4,6 +4,11 @@
     color: #000000; /* Text colour */
     background-color: #c0c0c0; 
   }
+
+  .dark-mode{
+    background-color: black;
+    color: white;
+  }
   
   .topics {
     padding-top: 4rem;
