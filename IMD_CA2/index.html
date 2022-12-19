@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>CA2</title>
+    <title>My Portfolio</title>
     
     <!-- Link to Bootstrap Stylesheet-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- Link to My Stylesheet-->
     <link rel="stylesheet" href="css/ca2.css">
+
+	<!-- Link to icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar-main">
@@ -19,10 +23,7 @@
         <div class="container-fluid">
             <a id="homeName" class="navbar-brand" href="#home">Conor Kinsella</a>
             
-            <ul class="nav nav-pills">  
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
+            <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link" href="#grades">Grades</a>
                 </li>
@@ -31,6 +32,12 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contactMe">Contact Me</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
                 </li>
 				
             </ul>
@@ -42,13 +49,24 @@
 		<main class = "bg-secondary">
 			<!-- Home page -->
 			<section id="home" class="topics">
-				<h3 class="fw-bold">Conor Kinsella, X00165419</h3>
+				<div class="progress">
+					<div class="progress-bar progress-bar-striped active" role="progressbar"
+					aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					  0%
+					</div>
+				  </div>
+				  
+				<div class="row">
+					<div class="col-3">
+						<h3 class="text-white fw-bold">Conor Kinsella, X00165419</h3>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-3">
 						<img class="float-start img-fluid rounded me-4" src="images/individual.PNG">
 					</div>
 
-					<div class="col-6">
+					<div class="col-6 text-white">
 						<h4>Some info about me !</h4>
 						<ul style="list-style-type:circle">
 							<li>I am 21 years old</li>
@@ -79,63 +97,284 @@
 				
 			</section>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<!-- About page -->
-			<section id="aboutMe" class="topics">
-				<h4 class="text-white fw-bold">Welcome to my About Me page</h4>
-				<p>Some text will go here</p>
-				<main>
-					<h4 class = "text-primary">About Me</h4>
-					<div>
-						<img class="float-start img-fluid rounded me-4" src="images/homePic2.jpg" width="400" height="300"  alt="Gym home 2"/>
-						<p>This is the text that will be displayed beside the image.</p>
-					</div>
-
-				</main>
-			</section>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
-
 
 			<!-- Grades page -->
 			<section id="grades" class="topics">
 				<h4 class="text-white fw-bold">Welcome to the Grades</h4>
-				<p>Some text will go here</p>
+				<!-- <p>Some text will go here</p> -->
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  Year 4
+						</button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="grid-container">
+
+								<div class="grid-child bg-danger">
+									<h4 class="fw-bold text-white">Semester 1</h4>
+									<ul class="text-white">
+										<li>Results TBC</li>
+									</ul>
+								</div>
+							
+								<div class="grid-child bg-primary">
+									<h4 class="fw-bold text-white">Semester 2</h4>
+									<ul class="text-white">
+										<li>Results TBC</li>
+									</ul>
+								</div>
+							  
+							</div>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  Year 3
+						</button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="grid-container">
+
+								<div class="grid-child bg-danger">
+									<h4 class="fw-bold text-white">Semester 1</h4>
+									<ul class="text-white">
+										<li>Data Analysis : C</li>
+										<li>Data Structures and Algorithms : C+</li>
+										<li>Big Data Technologies : B+</li>
+										<li>Cloud Servies and Distributed Computing : B</li>
+										<li>Operating Systems : B</li>
+										<li>Server Side Web Development : B-</li>
+									</ul>
+								</div>
+							
+								<div class="grid-child bg-primary">
+									<h4 class="fw-bold text-white">Semester 2</h4>
+									<ul class="text-white">
+										<li>Experimental Learning : PASS</li>
+									</ul>
+								</div>
+							  
+							</div>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  Year 2
+						</button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="grid-container">
+								<div class="grid-child bg-danger">
+									<h4 class="fw-bold text-white">Semester 1</h4>
+									<ul class="text-white">
+										<li>Advanced Database Technologies : B</li>
+										<li>Discrete Mathematics 2 : A</li>
+										<li>Network Fundamentals : B+</li>
+										<li>Software Quality Assurance and Testing : B</li>
+										<li>Software Development 3 : B</li>
+										<li>Client-Side Web Development : B+</li>
+									</ul>
+									
+								</div>
+							
+								<div class="grid-child bg-primary">
+									<h4 class="fw-bold text-white">Semester 2</h4>
+									<ul class="text-white">
+										<li>Data Administration and Analysis : B</li>
+										<li>Management Science : A</li>
+										<li>Routing & Switching Essentials : B+</li>
+										<li>Project : B+</li>
+										<li>Information Security : B+</li>
+										<li>Software Development 4 : B+</li>
+									</ul>									
+								</div>							  
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
 			</section>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
 			<!-- Work Ex page-->
 			<section id="workEx" class="topics">
-				<h4 class="text-white fw-bold">Welcome to the Work Experience page</h4>
-				<p>Some text will go here</p>
+				<header>
+					<h4 class="text-white fw-bold">Welcome to the Work Experience page</h4>
+				</header>
+				<br>
+				<div class="grid-container">
+					<div class="grid-child bg-primary">
+						<header class="text-center">
+							<h4 class="text-white">Sonalake (January 2022 - August 2022)</h4>
+							<img src="images/sonalake.jpg" height="150">
+						</header>
+						<div class="text-center">
+							<h4 class="text-white">About The Company</h4>
+							<p class="text-white">
+								Sonalake is a software partnering company established in 2016. They have offices across Europe. Their offices are in Poznan, Dbulin, Bratislava and more EU cities.
+							</p>
+							<br>
+							<h4 class="text-white">My Role</h4>
+							<p class="text-white">
+								While here on my work placement, I was exposed to many areas of computing including:
+								<ul class="text-white">
+									<li>Data Science (Machine Learning Algorithms, Forecasting, Data science libraries such as Numpy, SciPy and Matplotlib)</li>
+									<li>Backend Development (Java, Javascript, Rust and Python)</li>
+									<li>Frontend Development (React.js)</li>
+								</ul>
+							</p>
+						</div>
+						<footer class="text-center">
+							<a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/sonalakehq" role="button"><i class="fa fa-twitter"></i></a>
+							<a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/Sonalake/" role="button"><i class="fa fa-facebook"></i></a>
+						</footer>
+					</div>
+					
+					<div class="grid-child bg-danger">
+						<header class="text-center">
+							<h4 class="text-white">Virgin Media Tallaght (December 2018 - January 2022)</h4>
+							<img src="images/vm2.png" height="150">
+						</header>
+						<div class="text-center">
+							<h4 class="text-white">About The Company</h4>
+							<br>
+							<p class="text-white">
+								Virgin Media is a multinational corporation with many different branches. I worked in the retail telecommunications department.
+							</p>
+							<br>
+							<h4 class="text-white">My Role</h4>
+							<p class="text-white">
+								While here, my main task was customer service. While it was useful for fine tuning my knowledge of technology, the main benefit, I found, was honing my interpersonal skills. I became much more confident in conversing with new people and understanding the importance of team work.
+							</p>
+						</div>
+						<footer class="text-center">
+							<a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/VirginMediaIE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" role="button"><i class="fa fa-twitter"></i></a>
+							<a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/VirginMediaIreland/" role="button"><i class="fa fa-facebook"></i></a>
+						</footer>
+					</div>
+				</div>
 			</section>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 
 			<!-- Contact Us page -->
 			<section id="contactMe" class="topics">
 				<h4 class="text-white fw-bold">Welcome to Contact Me page</h4>
-				<p>Some text will go here</p>
+				<br>
+				<button id="contactBtn" class="cntctBtn text-white">Click to see contact information</button>
+
+				<div id="myModal" class="modal">
+					<!-- <div>
+						<h2>Contact Information</h2>
+						<p>Please see my contact information below.</p>
+					</div> -->
+					<div class="modal-content">
+						<h2>Contact Information</h2>
+						<p>Please see my contact information below.</p>
+						<ul>
+							<li><a class="btn btn-primary" style="background-color: #0072b1 ;" href="https://www.linkedin.com/in/conor-kinsella-1904/" role="button"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+							<li><a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button"><i class="fa fa-facebook"></i> Facebook</a></li>
+						</ul>
+					</div>
+					
+				</div>
 			</section>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
-		
+			
+			<section id="projects">
+				<header>
+					<h2 class="text-center text-white fw-bold">Welcome to the Projects Page</h2>
+				</header>
+				<div class="grid-container">
+					<div class="grid-child bg-primary">
+						<h2 class="text-center text-white">2nd Year Project</h2>
+						<ul class="text-white">
+							<li>E-commerce project</li>
+							<li>Developed using Django Framework</li>
+							<li>Contained a mock payment system using Stripe and a payment key</li>
+							<li>Frontend designed using HTML, CSS and Bootstrap</li>
+							<li>Developed through a team of 3</li>
+							<li>Project managed through GitHub</li>
+							<li>Communicated with team via Discord</li>
+						</ul>
+					</div>
+					<div class="grid-child bg-danger">
+						<h2 class="text-center text-white">4th Year Project</h2>
+						<ul class="text-white">
+							<li>Being completed in conjuction with Bank of America/Merril Lynch</li>
+							<li>Crypto Dashboard</li>
+							<li>Obtaining daily prices of crypto through Coinmarketcap API</li>
+							<li>Being developed through Django Framework and React.js</li>
+							<li>Project being managed through GitHub</li>
+							<li>Communicating with mentor through GitHub, email and WeChat</li>
+						</ul>
+
+					</div>
+				</div>
+			</section>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+			<section id="hobbies">
+				<h2 class="text-center text-white fw-bold">Welcome to the Hobbies Page</h2>
+				<br>
+				<div class="row">
+					<div class="col-4">
+						<div>
+							<img src="images/fury.jpg" height="100">
+						</div>
+						<br>
+						<div>
+							<img src="images/man u.png" height="100">
+						</div>
+
+					</div>
+					<div class="col-8">
+						<h2 class="text-white">
+							My interests
+						</h2>
+						<p class="text-white">My interests vary. They mainly revolve around sport. I have a keen interest in football and boxing especially.
+							I competed in boxing for many years winning many regional tournaments and making my mark nationally.
+
+							My other interests include:
+							<ul class="text-white">
+								<li>Music (rap, pop, Irish trad) I also DJ functions and venues in the city centre</li>
+								<li>Formula 1</li>
+								<li>Travelling</li>
+								<li>Mountain Hiking</li>
+								<li>Technology (Keen interest in modern technological developments)</li>
+								<li>Phones (Always keep up to date with most recent phone releases and innovations)</li>
+							</ul>
+						</p>
+
+					</div>
+
+				</div>
+				
+
+			</section>
+
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 		</main>
 
 	</div> <!-- End of div data-spy="scroll" -->
 
 	<footer>
-        <b>Site Designed by Ben Walsh 2022</b>
+        <b>Site Designed by Conor Kinsella 2022</b>
     </footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 	<!-- My JavaScript file -->
-	<script src="scripts/myScripts.js"></script>  
+	<script src="js/myFuncs.js"></script>  
 </body>
 </html>
 
